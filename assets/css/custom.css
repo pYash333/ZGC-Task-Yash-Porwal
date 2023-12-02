@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Bitter", sans-serif;
+  --primary-color: #000000;
+  --white-color: #FFFFFF;
+  --secondary-color: #E6F0F2;
+  --ternary-color: #27808E;
+  --ternary-light-color: #00BACF;
+  --danger-color: #FF2D2D;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: url("../fonts/Bitter-Regular.woff2") format("woff2"), url("../fonts/Bitter-Regular.woff") format("woff"), url("../fonts/Bitter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bitter";
+  src: url("../fonts/Bitter-SemiBold.woff2") format("woff2"), url("../fonts/Bitter-SemiBold.woff") format("woff"), url("../fonts/Bitter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-size: 16px;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 400;
+}
+
+.spacing {
+  padding-top: 100px;
+}
+
+.icon-btn {
+  padding: 0 !important;
+  border: none !important;
+  width: 24px;
+}
+
+.section-heading {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.btn {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  border-radius: 0;
+  border: 0;
+}
+
+.btn-primary {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  padding: 11px 20px 11px 20px;
+  min-width: 166px;
+  height: 48px;
+  transition: all 0.3s linear;
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--primary-color) !important;
+}
+
+.btn-secondary {
+  color: var(--white-color);
+  background-color: var(--ternary-color);
+  padding: 11px 29px;
+  min-width: 150px;
+  height: 48px;
+  font-weight: 600;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: var(--ternary-color) !important;
+}
+
+.btn:hover,
+.btn:focus,
+.btn-close {
+  box-shadow: none !important;
+}
+
+.input-wrapper .form-control {
+  border-radius: 0;
+  padding: 17px 20px;
+  color: var(--primary-color);
+  box-shadow: none !important;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+.input-wrapper .form-control::placeholder {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1340px;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1460px;
+  }
+}
+@media (max-width: 1366px) {
+  .input-wrapper .form-control {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .section-heading {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .icon-btn {
+    width: 20px;
+  }
+  .btn {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .spacing {
+    padding-top: 93px;
+  }
+}
+@media (max-width: 991px) {
+  .spacing {
+    padding-top: 71px;
+  }
+  .section-heading {
+    font-size: 26px;
+    line-height: 38px;
+  }
+  .btn {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .btn-primary {
+    min-width: 140px;
+    height: 42px;
+  }
+  .btn-secondary {
+    min-width: 140px;
+    height: 42px;
+  }
+  .input-wrapper .form-control {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}/*# sourceMappingURL=custom.css.map */
